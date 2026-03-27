@@ -1,0 +1,119 @@
+@import "tailwindcss";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-dark: #1a1a2e;
+  --color-light: #f0efea;
+  --color-orange: #f97316;
+  --color-blue: #2596be;
+  --color-muted: #6b7280;
+
+
+  /* ── Niveaux dark mode ── */
+  --color-dark-bg: #0f1117;
+  --color-dark-card: #1a1d27;
+  --color-dark-inner: #222635;
+  --color-dark-border: #2a2d3a;
+}
+
+/* ── Animations au scroll ── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Délais cascade */
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.delay-4 {
+  transition-delay: 0.4s;
+}
+
+/* Annimation hero  */
+.hero-badge {
+  animation: fadeDown 0.7s ease 0.1s both;
+}
+
+.hero-content {
+  animation: fadeLeft 0.8s ease 0.3s both;
+}
+
+.hero-photo {
+  animation: fadeRight 0.9s ease 0.4s both;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
