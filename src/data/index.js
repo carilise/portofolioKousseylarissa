@@ -55,7 +55,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript", "Python", "Flask"],
     image: "/img/portfolio.png",
     alt: "Portfolio personnel",
-    demoUrl: "https://portfolio-larissa.onrender.com/",
+    demoUrl: "https://portofoliokousseylarissa-2.onrender.com/",
   },
   {
     title: "Site de création de boutique en ligne",
