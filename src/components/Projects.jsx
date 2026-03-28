@@ -36,7 +36,7 @@ export default function Projects() {
               whileHover={{ y: -6, boxShadow: "0 16px 40px rgba(0,0,0,0.12)" }}
               className="bg-white dark:bg-dark-card border border-gray-200 dark:border-dark-border rounded-2xl overflow-hidden"
             >
-              <div className="h-[180px] overflow-hidden bg-gray-900">
+              <div className="aspect-[16/9] overflow-hidden bg-gray-900 rounded-t-2xl">
                 <motion.img
                   src={project.image}
                   alt={project.alt}

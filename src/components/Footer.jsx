@@ -7,9 +7,10 @@ export default function Footer() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8, delay: 0.4 }}
-      className="mt-16 pt-8 border-t border-gray-200 dark:border-dark-border text-sm text-muted"
     >
-      © 2026 Larissa KOUSSEY. Tous droits réservés.
+      <div className="py-6 text-center text-sm text-muted">
+        Design & Développement : Larissa KOUSSEY
+      </div>
     </motion.footer>
   );
 }
